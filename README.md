@@ -31,11 +31,11 @@ $y_i = f(x_i) + \xi_i, \qquad \xi_i \sim \mathcal{U}(-\sigma,\, \sigma)$
 Для скользящего среднего по 3 и 5 точкам используются следующие формулы:
 
 $$
-\text{MA3:} \quad \tilde{y}_i = \frac{y_{i-1} + y_i + y_{i+1}}{3}
+\text{3 точки:} \quad \tilde{y}_i = \frac{y_{i-1} + y_i + y_{i+1}}{3}
 $$
 
 $$
-\text{MA5:} \quad \tilde{y}_i = \frac{y_{i-2} + y_{i-1} + y_i + y_{i+1} + y_{i+2}}{5}
+\text{5 точек:} \quad \tilde{y}_i = \frac{y_{i-2} + y_{i-1} + y_i + y_{i+1} + y_{i+2}}{5}
 $$
 
 Для анализа качества сглаживания будут использоваться метрикаи качества:
