@@ -29,13 +29,13 @@ $x_i = i \cdot \Delta x, \qquad \Delta x = \frac{L}{N-1}, \qquad i = 0, 1, \dots
 $y_i = f(x_i) + \xi_i, \qquad \xi_i \sim \mathcal{U}(-\sigma,\, \sigma)$
 
 Для скользящего среднего по 3 и 5 точкам используются следующие формулы:
-- $ \text{для 3 точек:} \quad \tilde{y}_i = \frac{y_{i-1} + y_i + y_{i+1}}{3} $;
+- $\text{для 3 точек:} \quad \tilde{y}_i = \frac{y_{i-1} + y_i + y_{i+1}}{3}$;
 
-- $ \text{для 5 точек:} \quad \tilde{y}_i = \frac{y_{i-2} + y_{i-1} + y_i + y_{i+1} + y_{i+2}}{5} $.
+- $\text{для 5 точек:} \quad \tilde{y}_i = \frac{y_{i-2} + y_{i-1} + y_i + y_{i+1} + y_{i+2}}{5}$.
 
 Для анализа качества сглаживания будут использоваться метрикаи качества:
-- $ \text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{N}\bigl(\tilde{y}_i - f(x_i)\bigr)^2}$ ;
-- $ \text{MAE} = \frac{1}{N}\sum_{i=1}^{N}\bigl|\tilde{y}_i - f(x_i)\bigr|$ .
+- $\text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{N}\bigl(\tilde{y}_i - f(x_i)\bigr)^2}$;
+- $\text{MAE} = \frac{1}{N}\sum_{i=1}^{N}\bigl|\tilde{y}_i - f(x_i)\bigr|$.
 
 Исходная и зашумленная функции представлены на рисунке ниже.
 <div align="center">
